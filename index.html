@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kathrin & Michael. G'heirad wird!</title>
- <style>
+  <style>
     html, body {
       margin: 0;
       padding: 0;
@@ -14,22 +14,17 @@
       background-color: #000; /* optional – blendet weiße Ränder aus */
     }
 
-.iframe-container {
-  width: 110dvw;
-  height: 110dvh;
-  display: flex;
-  justify-content: center; /* horizontal zentrieren */
-  align-items: center;     /* vertikal zentrieren */
-  overflow: hidden;
-}
-
-iframe {
-  border: none;
-  width: 100%;
-  height: 100%;
-  transform: scale(1.10);       /* 0% Zoom */
-  transform-origin: center center; /* Zoom von der Mitte */
-}
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 110dvw;
+      height: 110dvh;
+      border: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
