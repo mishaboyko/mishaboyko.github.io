@@ -14,27 +14,35 @@
       background-color: #000; /* optional – blendet weiße Ränder aus */
     }
 
-.iframe-container {
-  width: 100dvw;
-  height: 100dvh;
-  display: flex;
-  justify-content: center; /* horizontal zentrieren */
-  align-items: center;     /* vertikal zentrieren */
-  overflow: hidden;
-}
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000; /* optional – blendet weiße Ränder aus */
+    }
 
-iframe {
-  border: none;
-  width: 100%;
-  height: 100%;
-  transform: scale(1.15);       /* 10% Zoom */
-  transform-origin: center center; /* Zoom von der Mitte */
-}
-</style>
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
-  <div class="iframe-container">
-    <iframe src="https://miboy87.wixsite.com/mysite" allowfullscreen></iframe>
-  </div>
+  <iframe 
+    src="https://miboy87.wixsite.com/mysite"
+    allowfullscreen
+    scrolling="yes"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+  </iframe>
 </body>
 </html>
